@@ -1,11 +1,11 @@
-# IoT Flood Dashboard (Example)
+# IoT Flood Monitoring Dashboard (Demo)
 
-A simple mock IoT dashboard detecting water level anomalies.
+This project simulates a basic IoT dashboard that ingests water-level sensor data,
+detects anomalies, and visualizes the results.
 
-## Features
-- Reads mock IoT sensor data.
-- Flags anomalies above a set threshold.
-- Outputs results in console.
+Features:
+- Mock API data stream
+- Z-score anomaly detection
+- Dashboard-style time series plot with flagged events
 
-## Status
-Demonstration only.
+All data here are illustrative.
