@@ -1,26 +1,28 @@
-# IoT Flood Dashboard (Mock API + Anomaly Detection)
+# GRASS–GEE → SWMM Urban Hydrology Pipeline
 
-**Author:** Muhammad Amin Khan  
-**Purpose:** Simple demonstration of how IoT sensor data can feed into a flood monitoring dashboard.
+**Author:** Muhammad Amin Khan
 
-This prototype:
-1. Reads mock water-level data from a simulated API.
-2. Flags anomalies using a rolling statistical threshold.
-3. Generates an alert plot for visualization.
+## Overview
+This open-source prototype integrates:
+- **GRASS GIS** for spatial preprocessing
+- **Google Earth Engine (GEE)** for remote-sensing & land-use data
+- **EPA SWMM** for urban hydrology modeling
+- **Optimization** with SciPy Differential Evolution and **CMA-ES** (via `cma`)
+- **Sensitivity/uncertainty** scaffolds for robust, decision-ready outputs
+- Fully reproducible via **Conda** (geospatial stack) or minimal **pip** (no heavy geo deps)
 
----
-
-## Tools & Libraries
-- Python 3.x
-- Pandas, NumPy
-- Matplotlib
-- Flask (for dashboard simulation)
+**Goal:** A transparent, reproducible workflow for automated **catchment preprocessing → hydrologic modeling → calibration → sensitivity**, supporting **climate-resilient infrastructure planning**.
 
 ---
 
-## Example Output
-![Flood Alert](hydrograph.png)
+## Features
+- Automated catchment & land-use preprocessing (GRASS/GEE)
+- SWMM input scaffolding (rainfall, subcatchments, parameters)
+- Calibration via Differential Evolution / CMA-ES
+- Global sensitivity hooks
+- Clean, modular Python (`main.py`, `pipeline.py`)
+- Example **IoT Flood Dashboard** (mock API + anomaly detection)
 
 ---
 
-**Note:** Uses generated data for demonstration; easily extendable to real sensor APIs.
+## Repository Layout
