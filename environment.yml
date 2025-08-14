@@ -1,0 +1,20 @@
+name: grass-gee-swmm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - geopandas
+  - rasterio
+  - shapely
+  - pyproj
+  - requests
+  - pip
+  - pip:
+      - cma
+      - earthengine-api
+      - pyswmm
+      - flask
